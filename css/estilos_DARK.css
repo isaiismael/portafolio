@@ -1,0 +1,118 @@
+:root {
+  --DARK_fondo-texto-negro: rgb(9, 51, 85);
+  --DARK_fondo-texto-blanco: #eff3f5;
+  --DARK_fondo-negro-dark: #121a21;
+  /*menu*/
+  --DARK_a-hover: #1f303d;
+  --DARK_a-color: #eeeeee;
+  /*seccion perfil*/
+  --DARK_section: #1a2d3d;
+  --DARK_section2: #254055;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Open Sans", sans-serif;
+}
+
+.dark .encabezado {
+  background: var(--DARK_fondo-negro-dark);
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  padding: 0 60px;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  /* height: 80px; */
+  z-index: 999;
+}
+
+.dark .modo span {
+  color: rgb(233, 178, 0);
+}
+.dark .icono_menu {
+  color: white;
+}
+.dark .menu__item {
+  padding: 23px 25px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  color: var(--DARK_a-color);
+  font: 1rem;
+}
+.dark .menu__item:hover {
+  background: var(--DARK_a-hover);
+}
+/* PERFIL DESCRIPCION - FOTO PERFIL */
+
+.dark .perfil__descripcion__nombre {
+  color: #ffffff;
+}
+.dark .perfil__descripcion__profesion {
+  color: #dad6d6;
+}
+.dark .perfil__descripcion__resumen {
+  color: #cecece;
+}
+.dark .perfil__descripcion__resumen a {
+  color: rgb(255, 255, 255);
+}
+
+/* ************************** */
+.dark .perfil {
+  background: var(--DARK_section);
+}
+
+/* TECNOLOGIA */
+
+.dark .tecnologia {
+  background: var(--DARK_section2);
+}
+.dark h2.titulo {
+  color: var(--DARK_fondo-texto-blanco);
+}
+
+/* TRABAJO */
+.dark .trabajo {
+  background: var(--DARK_section);
+}
+
+/* CONTACTO */
+.dark .contacto {
+  background: var(--DARK_section2);
+}
+.dark .formulario {
+  background: var(--DARK_section2);
+}
+.dark .formulario__email input {
+  background: rgb(221, 240, 247);
+  color: rgb(12, 35, 54);
+}
+.dark .formulario__email input::placeholder {
+  color: rgb(34, 97, 139);
+}
+.dark .formulario__name textarea::placeholder {
+  color: rgb(34, 97, 139);
+}
+.dark .formulario__name textarea {
+  background: rgb(221, 240, 247);
+  color: rgb(12, 35, 54);
+}
+.dark .formulario__button button {
+  background: rgb(36, 144, 151);
+  color: white;
+}
+.dark .formulario__button button:hover {
+  background: rgb(22, 105, 110);
+}
+
+@media screen and (max-width: 990px) {
+  .dark .encabezado {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+}
