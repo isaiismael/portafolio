@@ -116,3 +116,10 @@ body {
     padding-bottom: 10px;
   }
 }
+
+@media screen and (max-width: 470px) {
+  .dark .encabezado {
+    padding-right: 40px;
+    padding-left: 40px;
+  }
+}
