@@ -81,6 +81,13 @@ ul {
   align-items: center;
   margin: 15px 0;
 }
+.more__download {
+  color: white;
+  padding: 10px;
+  background: rgb(41, 126, 25);
+  border-radius: 50px;
+  font-size: 13px;
+}
 .perfil__descripcion__nombre {
   font-size: 2.6rem;
   text-transform: uppercase;
@@ -104,7 +111,9 @@ ul {
   color: #4b4b4b;
   line-height: 40px;
 }
-
+.perfil__imagen__sm {
+  display: none;
+}
 .perfil__descripcion__pais img {
   width: 30px;
 }
@@ -175,7 +184,7 @@ h2.titulo {
 .tecnologia__div img {
   width: 60px;
 }
-.tecnologia__name{
+.tecnologia__name {
   font-size: 14px;
   font-weight: bold;
   color: white;
@@ -408,6 +417,11 @@ a.ver {
   }
   .perfil__imagen {
     grid-column: span 2;
+    display: none;
+  }
+  .perfil__imagen__sm {
+    display: block;
+    text-align: center;
   }
   .perfil__descripcion__nombre {
     font-size: 2.3125rem;
