@@ -33,6 +33,7 @@ ul {
   top: 0;
   /* height: 80px; */
   z-index: 999;
+  box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.315);
 }
 .modo__logo {
   grid-column: span 2;
@@ -103,6 +104,8 @@ ul {
   line-height: 30px;
   font-family: Arial, Helvetica, sans-serif;
   color: #3f3f3f;
+  padding: 20px 10px;
+  text-align: center;
 }
 .perfil__descripcion__resumen {
   font-size: 1.35rem;
@@ -177,6 +180,7 @@ h2.titulo {
   align-items: center;
   align-content: center;
   transition: all 0.3s;
+  box-shadow: 0px 3px 4px rgba(0, 0, 0, 0.315);
 }
 .tecnologia__div:hover {
   transform: scale(1.2);
@@ -337,7 +341,7 @@ a.ver {
 /* FOOTER */
 .footer {
   background: rgb(0, 0, 0);
-  padding: 15px;
+  padding: 20px;
 }
 .footer__div {
   font-size: 30px;
@@ -499,8 +503,10 @@ a.ver {
   .tecnologia__div {
     grid-column: span 12;
   }
-}
-@media screen and (max-width: 400px) {
+  .perfil__descripcion__nombre{
+    font-size: 28px;
+    line-height: 40px;
+  }
   .perfil__descripcion__resumen {
     font-size: 1rem;
   }
@@ -511,6 +517,8 @@ a.ver {
     width: 100px;
   }
 }
+/* @media screen and (max-width: 400px) {
+} */
 
 @media screen and (max-width: 385px) {
   .mas h2 {

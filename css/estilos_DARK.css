@@ -28,6 +28,7 @@ body {
   top: 0;
   /* height: 80px; */
   z-index: 999;
+  box-shadow: 1px 1px 4px rgba(189, 247, 255, 0.137);
 }
 
 .dark .modo span {
