@@ -116,6 +116,9 @@ body {
     padding-top: 10px;
     padding-bottom: 10px;
   }
+  .dark .menu__item {
+    padding: 15px 25px;
+  }
 }
 
 @media screen and (max-width: 470px) {

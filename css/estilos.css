@@ -503,7 +503,7 @@ a.ver {
   .tecnologia__div {
     grid-column: span 12;
   }
-  .perfil__descripcion__nombre{
+  .perfil__descripcion__nombre {
     font-size: 28px;
     line-height: 40px;
   }
