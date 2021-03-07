@@ -51,6 +51,7 @@ ul {
 }
 .icono_menu {
   display: none;
+  user-select: none;
 }
 .menu {
   grid-column: span 10;
@@ -67,6 +68,7 @@ ul {
   align-items: center;
   color: var(--a-color);
   font: 1rem;
+  user-select: none;
 }
 .menu__item:hover {
   background: var(--a-hover);
@@ -123,12 +125,13 @@ ul {
 .perfil__descripcion__ilp img {
   width: 38px;
 }
+
 /* ************************** */
 .perfil {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   justify-items: center;
-  padding: 30px 55px 20px 55px;
+  padding: 60px 55px 20px 55px;
   background: var(--section);
   box-shadow: 1px 1px 2px rgb(224, 224, 224);
   align-items: center;
@@ -157,6 +160,7 @@ ul {
 .tecnologia {
   background: white;
   padding: 25px 50px;
+  padding-top: 50px;
 }
 h2.titulo {
   text-align: center;
@@ -204,6 +208,7 @@ h2.titulo {
 /* TRABAJO */
 .trabajo {
   padding: 20px;
+  padding-top: 50px;
 }
 .trabajo__grupo {
   display: grid;
@@ -286,6 +291,7 @@ a.ver {
 .contacto {
   width: 100%;
   padding: 40px;
+  padding-top: 50px;
 }
 .formulario {
   width: 80%;
