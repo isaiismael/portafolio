@@ -13,6 +13,9 @@
   padding: 0;
   box-sizing: border-box;
 }
+html{
+  scroll-behavior: smooth;
+}
 body {
   font-family: "Open Sans", sans-serif;
 }
@@ -131,10 +134,11 @@ ul {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   justify-items: center;
-  padding: 60px 55px 20px 55px;
+  padding: 20px 55px 20px 55px;
   background: var(--section);
   box-shadow: 1px 1px 2px rgb(224, 224, 224);
   align-items: center;
+  scroll-margin-top: 20ex;
 }
 .perfil__descripcion {
   grid-column: span 1;
@@ -160,7 +164,8 @@ ul {
 .tecnologia {
   background: white;
   padding: 25px 50px;
-  padding-top: 50px;
+  padding-top: 20px;
+  scroll-margin-top: 8ex;
 }
 h2.titulo {
   text-align: center;
@@ -208,7 +213,8 @@ h2.titulo {
 /* TRABAJO */
 .trabajo {
   padding: 20px;
-  padding-top: 50px;
+  padding-top: 20px;
+  scroll-margin-top: 8ex;
 }
 .trabajo__grupo {
   display: grid;
@@ -291,7 +297,8 @@ a.ver {
 .contacto {
   width: 100%;
   padding: 40px;
-  padding-top: 50px;
+  padding-top: 20px;
+  scroll-margin-top: 8ex;
 }
 .formulario {
   width: 80%;
@@ -506,9 +513,7 @@ a.ver {
   }
 }
 @media screen and (max-width: 400px) {
-  .tecnologia__div {
-    grid-column: span 12;
-  }
+  
   .perfil__descripcion__nombre {
     font-size: 28px;
     line-height: 40px;
@@ -532,5 +537,12 @@ a.ver {
   }
   .mas p {
     display: none;
+  }
+}
+
+
+@media screen and (max-width: 350px) {
+  .tecnologia__div {
+    grid-column: span 12;
   }
 }
